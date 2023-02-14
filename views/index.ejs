@@ -9,9 +9,13 @@
     <ul>
       <% docs.forEach(function(clientes){ %>
         <li>
+          <a href="/editar/<%= clientes._id %>">
             <%= clientes.nome %>
+          </a>
         </li>
       <% }) %>
     </ul>
+    <hr />
+    <a href="/novo">Cadastrar novo cliente</a>
   </body>
 </html>
